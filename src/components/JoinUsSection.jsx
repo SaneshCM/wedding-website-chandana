@@ -1,25 +1,41 @@
 import React from "react";
 
 export default function JoinUsSection() {
+  const images = [
+    "/assets/joinus1.JPG",
+    "/assets/joinus2.JPG",
+    "/assets/joinus3.JPG",
+    "/assets/joinus4.JPG",
+  ];
+
   return (
-    <div className="w-full flex flex-col items-center py-10 bg-gray-950 text-white px-4 sm:px-8 md:px-16 relative">
-      <h2 className="text-5xl font-bold text-center mb-6">Join Us</h2>
-      
-      {/* Invitation Message */}
-      <p className="text-lg text-center max-w-2xl mb-8">
-        We warmly invite you to celebrate our special day with us. Your presence will make our wedding truly joyful and memorable.
-      </p>
-{/*       
-      <p className="text-lg text-center max-w-2xl">
-        Please join us for the wedding ceremony and reception as we embark on this new journey together.
-      </p> */}
-      
-      {/* Contact Details */}
-      <div className="absolute bottom-8 right-8 text-right text-sm sm:text-base">
-        <p className="font-semibold">Contact Us</p>
-        <p>Sanesh: +91 9745609556</p>
-        <p>Akshata: +91 8921427689</p>
+    <section className="mb-16">
+      <div className="relative rounded-2xl overflow-hidden shadow-lg">
+        {/* Image grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+          {images.map((src, i) => (
+            <div key={i} className="relative group">
+              <img
+                src={src}
+                alt={`join-${i + 1}`}
+                className="w-full h-40 md:h-60 object-cover rounded-md transform transition-transform duration-500 group-hover:scale-105 brightness-90"
+              />
+              {/* Optional subtle overlay on hover */}
+              <div className="absolute inset-0 bg-pink-500/20 opacity-0 group-hover:opacity-30 transition-opacity rounded-md"></div>
+            </div>
+          ))}
+        </div>
+
+        {/* Centered text overlay */}
+        <div className="absolute inset-0 flex items-center justify-center z-20">
+          <h2 className="text-white text-4xl md:text-6xl font-serif text-center px-4 py-2 bg-pink-500/25 rounded-lg drop-shadow-lg">
+            Join Us
+          </h2>
+        </div>
+
+        {/* Soft pink gradient overlay for romantic effect */}
+        <div className="absolute inset-0 bg-gradient-to-t from-pink-500/30 via-transparent to-pink-500/30 z-10"></div>
       </div>
-    </div>
+    </section>
   );
 }
