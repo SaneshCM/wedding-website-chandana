@@ -2,10 +2,10 @@ import React from "react";
 
 export default function JoinUsSection() {
   const images = [
-    "/assets/joinus1.JPG",
-    "/assets/joinus2.JPG",
-    "/assets/joinus3.JPG",
-    "/assets/joinus4.JPG",
+    "/src/assets/joinus1.JPG",
+    "/src/assets/joinus2.JPG",
+    "/src/assets/joinus3.JPG",
+    "/src/assets/joinus4.JPG",
   ];
 
   return (
