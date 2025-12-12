@@ -45,14 +45,14 @@ export default function VenueSection() {
           time="12:00 PM - 12:30 PM Muhurtham"
           address="Ayodhya Auditorium, Payyanur"
           mapLink="https://maps.app.goo.gl/YV5RMy5YzKGfZFuU9"
-          image="/src/assets/wedding-1.JPG"
+          image="/public/wedding-1.JPG"
         />
         <VenueCard
           title="Reception"
           time="5:30 PM - 9:00 PM"
           address="Al Saj Comet, Kazhakoottam Vadakkumbhagam, Thiruvananthapuram"
           mapLink="https://maps.app.goo.gl/f7Ac5oUMzhF5YsSy8"
-          image="/src/assets/reception.JPG"
+          image="/public/reception.JPG"
         />
       </div>
     </section>
