@@ -1,6 +1,6 @@
 import React from "react";
 
-const VenueCard = ({ title, time, address, mapLink, image }) => (
+const VenueCard = ({ title, date, time, address, mapLink, image }) => (
   <div className="relative rounded-2xl overflow-hidden shadow-lg group">
     {/* Background Image */}
     <div
@@ -16,6 +16,7 @@ const VenueCard = ({ title, time, address, mapLink, image }) => (
           <h3 className="text-xl md:text-2xl font-serif text-gray-900">
             {title}
           </h3>
+          <p className="text-sm md:text-base text-gray-800 mt-1">{date}</p>
           <p className="text-sm md:text-base text-gray-800 mt-1">{time}</p>
           <p className="text-sm md:text-base text-gray-800 mt-1">{address}</p>
           <a
@@ -46,6 +47,7 @@ export default function VenueSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <VenueCard
           title="Wedding Ceremony"
+          date="25 December 2025"
           time="12:00 PM - 12:30 PM Muhurtham"
           address="Ayodhya Auditorium, Payyanur"
           mapLink="https://maps.app.goo.gl/YV5RMy5YzKGfZFuU9"
@@ -53,6 +55,7 @@ export default function VenueSection() {
         />
         <VenueCard
           title="Reception"
+          date="28 December 2025"
           time="5:30 PM - 9:00 PM"
           address="Al Saj Comet, Kazhakoottam Vadakkumbhagam, Thiruvananthapuram"
           mapLink="https://maps.app.goo.gl/f7Ac5oUMzhF5YsSy8"
