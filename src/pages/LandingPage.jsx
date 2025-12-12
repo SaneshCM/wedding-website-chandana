@@ -9,9 +9,9 @@ import JoinUsSection from "../components/JoinUsSection";
  * Landing page composes slideshow, countdown, venues, gallery preview and join-us.
  */
 const slides = [
-  { src: "/public/1_updated.jpg", alt: "hero-1" },
-  { src: "/public/2_updated.jpg", alt: "hero-2" },
-  { src: "/public/3_updated.jpg", alt: "hero-3" },
+  { src: "/1_updated.jpg", alt: "hero-1" },
+  { src: "/2_updated.jpg", alt: "hero-2" },
+  { src: "/3_updated.jpg", alt: "hero-3" },
 ];
 
 export default function LandingPage() {
