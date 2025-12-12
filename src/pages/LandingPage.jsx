@@ -10,8 +10,8 @@ import JoinUsSection from "../components/JoinUsSection";
  */
 const slides = [
   { src: "/1_updated.jpg", alt: "hero-1" },
-  { src: "/2_updated.jpg", alt: "hero-2" },
-  { src: "/3_updated.jpg", alt: "hero-3" },
+  { src: "/5_updated.jpg", alt: "hero-2" },
+  { src: "/2_updated.jpg", alt: "hero-3" },
 ];
 
 export default function LandingPage() {
