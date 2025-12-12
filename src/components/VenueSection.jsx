@@ -13,16 +13,18 @@ const VenueCard = ({ title, time, address, mapLink, image }) => (
       {/* Glass text overlay */}
       <div className="absolute inset-0 flex flex-col justify-end p-6">
         <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg inline-block text-center">
-          <h3 className="text-xl md:text-2xl font-serif text-gray-900">{title}</h3>
+          <h3 className="text-xl md:text-2xl font-serif text-gray-900">
+            {title}
+          </h3>
           <p className="text-sm md:text-base text-gray-800 mt-1">{time}</p>
           <p className="text-sm md:text-base text-gray-800 mt-1">{address}</p>
           <a
             href={mapLink}
             target="_blank"
             rel="noreferrer"
-            className="mt-2 inline-block text-sm underline text-pink-600 hover:text-pink-400 transition-colors"
+            className="mt-2 inline-block px-3 py-1 text-sm font-medium text-white bg-pink-600 hover:bg-pink-500 rounded-full shadow-md transition-colors duration-300"
           >
-            Get directions
+            Get Directions
           </a>
         </div>
       </div>
@@ -34,7 +36,9 @@ export default function VenueSection() {
   return (
     <section className="mb-12" id="venues">
       <div className="mb-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-serif text-pink-600">Wedding & Reception</h2>
+        <h2 className="text-3xl md:text-4xl font-serif text-pink-600">
+          Wedding & Reception
+        </h2>
         <p className="mt-2 text-gray-700 md:text-lg">
           Celebrate with us at these special locations
         </p>
