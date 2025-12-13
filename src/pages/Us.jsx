@@ -14,9 +14,9 @@ export default function Us() {
 
         <p className="text-gray-800 text-center md:text-lg mb-6">
           We are thrilled to share our special day with you. <br/>
-          Please join us on{" "}
+          {/* Please join us on{" "}
           <span className="font-semibold">December 25, 2025</span> at <span className="font-semibold">Ayodhya Auditorium
-          Payyanur.</span>
+          Payyanur.</span> */}
         </p>
 
         <div className="text-center">
